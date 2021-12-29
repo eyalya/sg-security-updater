@@ -1,4 +1,4 @@
-### Security Group Updater
+# Security Group Updater
 
 Use aws cli to update security groups that in the list from terminal. 
 
