@@ -17,6 +17,7 @@ g_sg_rule_description = "john_do"
 IAM user should have permissions to change the security group. 
 An example for a security permision which allow the updating of security group sg-123456789
 
+```
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -60,3 +61,4 @@ An example for a security permision which allow the updating of security group s
         }
     ]
 }
+```
