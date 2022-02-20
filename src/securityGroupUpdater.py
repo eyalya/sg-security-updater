@@ -42,8 +42,6 @@ class UpdateSecurityGroupIp():
 
     def ChangeRule(self, name, sg):
         ingressIp = sg[0]["IpPermissions"]
-        print("old permmision for sg: {}".format(sg[0]["GroupId"]))
-        print(json.dumps(ingressIp, indent = 4))
 
         ruleIndex, ruleGroup = self.GetIpPremissionIndex(ingressIp, name)
         newIpRule = list()
