@@ -4,8 +4,8 @@ from botocore.exceptions import ClientError
 from src.utils import ComputerInfo
 
 class UpdateSecurityGroupIp():
-    def __init__(self, aws_profile, newIp=None):
-        self._client = boto3.session.Session(profile_name=aws_profile)
+    def __init__(self, session, newIp=None):
+        self._client = session
         self._ec2 = self._client.client('ec2')
         self._ip = newIp or ComputerInfo.GetMyIp()
         
